@@ -21,6 +21,13 @@ child.expect('password :')
 child.sendline('sp-admin')
 child.expect('rkscli:')
 
+# set hub
+child.sendline('set hub host aprqa.ruckuswireless.com')
+child.expect('OK')
+
+# log out
+child.sendline('exit')
+
 # end ap connect
 if child.isalive():
     child.close()
