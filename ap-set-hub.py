@@ -16,9 +16,9 @@ child = pexpect.spawn(con, encoding='utf-8', logfile=sys.stdout)
 
 # login ap
 child.expect('Please login:')
-child.send('super')
+child.sendline('super')
 child.expect('password :')
-child.send('sp-admin')
+child.sendline('sp-admin')
 child.expect('rkscli:')
 
 # end ap connect
