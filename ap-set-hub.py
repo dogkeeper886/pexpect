@@ -2,8 +2,8 @@ import pexpect
 import sys
 
 # argument check
-if len(sys.argv) == 1:
-    print('Need Argument')
+if len(sys.argv) != 2:
+    print('[AP_IP_ADDRESS]')
     exit(1)
 
 # input apIp
