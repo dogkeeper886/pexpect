@@ -18,7 +18,7 @@ print('vszProfile:', vszProfile)
 # start vsz conect
 con = 'ssh admin@' + vszIp
 child = pexpect.spawn(con, encoding='utf-8', logfile=sys.stdout)
-child.timeout = 60
+child.timeout = 90
 
 # login vsz
 child.expect('password:')
