@@ -31,9 +31,9 @@ child.expect('#')
 # setup vsz profile
 child.sendline('setup')
 child.expect('Select vSZ Profile (1/2):')
-if vszProfile == 'E|e':
+if vszProfile == 'E' or 'e':
     child.sendline('1')
-if vszProfile == 'H|h':
+if vszProfile == 'H' or 'h':
     child.sendline('2')
 child.sendline('Y')
 
