@@ -46,7 +46,7 @@ child.expect('Primary DNS:')
 child.sendline('10.10.10.10')
 child.expect('Secondary DNS:')
 child.sendline('10.10.10.106')
-child.expect('Do you want to apply the settings? \(y/n\)')
+child.expect('Do you want to apply the settings\? \(y/n\)')
 child.sendline('y')
 child.expect('#')
 
