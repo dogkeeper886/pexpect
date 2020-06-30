@@ -7,11 +7,11 @@ if len(sys.argv) != 3:
     exit(1)
 
 # input vszIp
-apIp = sys.argv[1]
+vszIp = sys.argv[1]
 print('vszIp:', vszIp)
 
 # input vszProfile
-apIp = sys.argv[2]
+vszProfile = sys.argv[2]
 print('vszProfile:', vszProfile)
 
 
