@@ -49,6 +49,8 @@ child.expect('Secondary DNS:')
 child.sendline('10.10.10.106')
 child.expect('Do you want to apply the settings\? \(y/n\)')
 child.sendline('y')
+child.expect('Accept these settings and continue\? \(y/n\)')
+child.sendline('y')
 child.expect('#')
 
 # log out
