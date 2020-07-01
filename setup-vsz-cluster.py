@@ -28,7 +28,7 @@ child.expect('#')
 child.sendline('setup')
 
 # skip network setup
-child.expect('Do you want to setup network? \(y/n\)')
+child.expect('Do you want to setup network\? \(y/n\)')
 child.sendline('N')
 
 # create cluster
