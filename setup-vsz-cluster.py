@@ -29,7 +29,7 @@ child.sendline('setup')
 
 # skip network setup
 child.expect('Do you want to setup network\? \(y/n\)')
-child.sendline('N')
+child.sendline('n')
 
 # create cluster
 child.expect('\(C\)reate a new cluster or \(J\)oin an exist cluster \(c/j\):')
