@@ -2,13 +2,17 @@ import pexpect
 import sys
 
 # argument check
-if len(sys.argv) != 2:
-    print('[VSZ_IP_ADDRESS]')
+if len(sys.argv) != 3:
+    print('[VSZ_IP_ADDRESS] [CLUSTER_IP_ADDRESS]')
     exit(1)
 
 # input vszIp
 vszIp = sys.argv[1]
 print('vszIp:', vszIp)
+
+# input clusterIp
+vszIp = sys.argv[2]
+print('clusterIp:', clusterIp)
 
 # start vsz conect
 con = 'ssh admin@' + vszIp
