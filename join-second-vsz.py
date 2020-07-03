@@ -11,7 +11,7 @@ vszIp = sys.argv[1]
 print('vszIp:', vszIp)
 
 # input clusterIp
-vszIp = sys.argv[2]
+clusterIp = sys.argv[2]
 print('clusterIp:', clusterIp)
 
 # start vsz conect
