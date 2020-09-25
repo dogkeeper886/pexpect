@@ -24,6 +24,8 @@ child.expect('rkscli:')
 # set hub
 child.sendline('set hub host aprqa.ruckuswireless.com')
 child.expect('OK')
+child.sendline('reboot')
+child.expect('OK')
 
 # log out
 child.sendline('exit')
